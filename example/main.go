@@ -3,9 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/SolarisNeko/go-sugar/generic"
-
-	. "github.com/SolarisNeko/go-sugar/calc/stream"
+	"github.com/SolarisNeko/sugar/generic"
 )
 
 // 示例代码

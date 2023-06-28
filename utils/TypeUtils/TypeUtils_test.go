@@ -3,7 +3,7 @@ package TypeUtils
 import (
 	"testing"
 
-	"github.com/SolarisNeko/go-sugar/utils/ArrayUtils"
+	"github.com/SolarisNeko/sugar/utils/ArrayUtils"
 )
 
 type User struct {

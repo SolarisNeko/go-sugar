@@ -1,7 +1,7 @@
 package stream
 
 import (
-	"github.com/SolarisNeko/go-sugar/generic"
+	"github.com/SolarisNeko/sugar/generic"
 )
 
 type T generic.Type
