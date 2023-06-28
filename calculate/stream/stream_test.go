@@ -1,13 +1,12 @@
-package main
+package stream
 
 import (
-	"fmt"
+	"testing"
 
 	"github.com/SolarisNeko/go-sugar/generic"
 )
 
-// 示例代码
-func main() {
+func TestStream_Filter(t *testing.T) {
 	stream := Stream{1, 2, 3, 4, 5}
 
 	// 使用 Filter 过滤偶数
@@ -28,11 +27,14 @@ func main() {
 		return generic.ToNumber(n1) + generic.ToNumber(n2)
 	}
 
+	// 输出: 12
 	sum := stream.
 		Filter(predicate).
 		Map(mapper).
 		Reduce(0, reducer)
 
-	// 输出: 12
-	fmt.Println(sum)
+	expect := Number(12)
+	if expect == sum {
+		t.Errorf("value not equals 12, value = %v", sum)
+	}
 }
