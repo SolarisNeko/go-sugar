@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/SolarisNeko/sugar/generic"
+	"github.com/SolarisNeko/go-sugar/generic"
 )
 
 // 示例代码
