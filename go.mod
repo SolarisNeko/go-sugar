@@ -1,3 +1,3 @@
 module github.com/SolarisNeko/go-sugar
 
-go 1.20
+go 1.16
